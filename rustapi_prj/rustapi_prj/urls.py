@@ -22,5 +22,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.sample_fun),
     path('model_view',views.model_view),
+    path('update_view/<id>',views.update_view),
+    path('fun1',views.fun1),
+    path('fun2/<id>',views.fun2),
+    path('class1',views.fun7.as_view()),
+    path('class2/<d>',views.fun8.as_view()),
+    path('genericapiview',views.genericapiview.as_view()),
+    path('update/<id>',views.update.as_view()),
+
+
 
 ]
